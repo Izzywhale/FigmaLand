@@ -1,0 +1,123 @@
+.pricing {
+  background: #182333;
+  padding-bottom: 100px;
+}
+
+.caption h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.caption p,
+.amount span {
+  margin-top: 26px;
+  margin-bottom: 77px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 450;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin: 25px auto;
+  width: 70%;
+}
+
+.amount p {
+  color: #ffffff;
+  width: 28%;
+  margin: 10px auto;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.rate p:first-child {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: 0.2px;
+  color: #f3cd03;
+}
+
+.rate,
+.amount span {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.amount span {
+  margin: 30px auto;
+}
+
+.rate p:last-child {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+
+.amount a {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #00b6f0;
+  padding: 16px 46px;
+  border-radius: 85px;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .caption{
+    width: 40%;
+  }
+
+  .caption h1, .caption p {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .amount{
+    padding-top: 150px;
+  }
+
+  .amount  p {
+    width: 80%;
+    margin-left: 0px;
+    text-align: left;
+  }
+
+  .amount span{
+    width: 80%;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .rate > p:last-child {
+    width: 120%;
+  }
+
+  .amount a, .rate {
+    width: 55%;    
+    margin-left: 0px;
+}
+}

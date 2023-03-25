@@ -1,0 +1,35 @@
+.background {
+    height: 100vh;
+    background-color: hsl(202, 100%, 14%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background > section {
+    width: 90%;
+    margin: 0 auto;
+    height: 87vh;
+    background-color: #00507C;
+    border-radius: 32px;
+    display: flex;
+}
+
+.leftpanel {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.rightpanel {
+    margin-right: 0px;
+    object-fit: fill;
+}
+
+.rightpanel > img {
+    width: 100%;
+    height: 87vh;
+    position: relative;
+  }  

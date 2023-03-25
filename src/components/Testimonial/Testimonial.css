@@ -1,0 +1,98 @@
+
+
+.testimonials h3 {
+  font-weight: 450;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #20262a;
+}
+
+.testimonials .ibm {
+  display: grid;
+  place-items: center;
+  margin: 80px auto;
+}
+
+.ibm > img {
+    width: 20%;
+}
+
+.testimonials p, .testimonials span {
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #5c5c5c;
+  margin: 25px auto;
+  width: 70%;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.testimonials span {
+  display: none;
+}
+
+.testimonials a {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  color: #ffffff;
+  width: 266px;
+  height: 52px;
+  flex-direction: row;
+  padding: 20px 36px;
+  background: #00b6f0;
+  border-radius: 85px;
+  text-decoration: none;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 23px; 
+  margin: 0 auto;
+  /* margin-bottom: 40px; */
+}
+
+.quadrant {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color: #112D57;
+    border-radius: 100% 0 0 0;
+    
+}
+
+@media screen and (min-width: 768px){
+  .testimonials span {
+    display: contents;
+  }
+
+  .testimonials p {
+    width: 30%;
+  }
+
+  .client{
+    gap:0px;
+    width: 10%;
+  }
+
+  .quadrant {
+    visibility: hidden;
+  }
+
+  .testimonials a{
+    margin-bottom: 100px;
+  }
+
+}
+

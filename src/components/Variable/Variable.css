@@ -1,0 +1,121 @@
+.screenSection{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.screenContent{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.screenContent h3 {
+    font-weight: 450;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #20262A;
+}
+
+.screenContent p{
+    font-weight: 450;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #5c5c5c;
+  margin: 25px auto;
+  /* width: 70%; */
+}
+
+.screenContent span{
+   display: none; 
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #5c5c5c;
+  margin: 25px auto;
+}
+
+.screenContent a{
+    text-decoration: none;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #00B6F0;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.screenImage > img {
+    width: 100%;
+} 
+
+.shape {
+    position: absolute; 
+     top: 200%;
+     left: 0%;
+     float: left;
+     width: 200px;
+     shape-outside: circle(80% at 30%);
+     clip-path: circle(40% at 0%);
+     height: 750px;
+     background-color: #00b6f0;
+     z-index: -1; 
+   }
+
+   @media screen and (min-width: 768px) {
+
+    .screenContent{
+      flex-direction: row;
+      justify-content: center; 
+      margin-top: 50px;
+    }
+     .screenContent p, .vf, .screenContent a {
+      display: none;
+    }
+     .screenImage {
+      width: 80%;
+    } 
+
+    .screenContent span, .screenContent a {
+      display: contents;
+    }
+
+    span > article {
+      width: 50%;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    span > .of {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .shape {
+      display: none;
+    }
+    
+    .deskShape {
+      position: absolute; 
+     top: 205%;
+     right: 0%;
+     float: right;
+     width: 200px;
+     shape-outside: circle(80% at 30%);
+     clip-path: circle(40% at -10%);
+     height: 950px;
+     background-color: #00b6f0;
+     z-index: -1; 
+     transform: rotate(180deg);
+    }
+   }

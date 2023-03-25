@@ -1,0 +1,109 @@
+.subheroSection {
+    width: min(500px, 90%);
+    margin: 0 auto;
+    padding: 70px 0;
+  
+  }
+  
+  .subheroSection h3 {
+    text-align: center;
+    font-weight: 450;
+    font-size: 36px;
+    line-height: 42px;
+    color: #f3cd03;
+    letter-spacing: 0.1px;
+    margin-bottom: 25px;
+  }
+  
+  .subheroSection h1 {
+    font-size: 56px;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 65px;
+    width: 80%;
+    color: #20262a;
+    letter-spacing: 0.2px;
+    text-align: centre;
+  }
+  
+  .subheroSection p {
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #5c5c5c;
+    margin: 25px auto;
+    width: 80%;
+  }
+  .subheroSection span{
+    display: none;
+  }
+  
+  .heroButton a {
+    display: block;
+  }
+  
+  .heroButton .download{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    width: 70%;
+    margin: 15px auto;
+    padding: 18.5px;
+    background-color: #00B6F0;
+    border-radius: 85px;
+    text-align: center;
+  }
+  
+  .subheroSection a:last-child{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    width: 70%;
+    color: #00B6F0;
+    padding: 17px;
+    background-color: #ffffff;
+    border: 1px solid #00B6F0;
+    border-radius: 85px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  
+  .screenSection{
+    width: min(500px, 85%);
+    margin: 60px auto;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .subheroSection {
+      width: 80%;
+      margin: 400px auto 0;
+    }
+
+    .subheroSection h1 {
+      display: grid;
+      place-items: center;
+    }
+
+    .subheroSection p {
+      width: 42%;
+    }
+
+    .heroButton {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .heroButton .download{
+      width: 20%;
+      margin: 0px;
+    }
+
+    .subheroSection a:last-child{
+      width: 20%;
+      margin: 0px;
+    }
+  }
