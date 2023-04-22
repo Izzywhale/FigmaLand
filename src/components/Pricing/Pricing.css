@@ -1,16 +1,17 @@
 .pricing {
   background: #182333;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .caption h1 {
   color: #ffffff;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 50px;
   line-height: 65px;
   letter-spacing: 0.2px;
   text-align: center;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 
 .caption p,
@@ -22,13 +23,26 @@
   line-height: 30px;
   font-weight: 450;
   line-height: 38px;
-  text-align: center;
   letter-spacing: 0.2px;
   margin: 25px auto;
-  width: 70%;
 }
 
-.amount p {
+.flip1{
+  display: block;
+  width: 85%;
+  text-align: center;
+}
+
+.flip2{
+  display: none;
+  width: 72%;
+}
+
+.amount{
+  margin-top: 70px;
+}
+
+.thirty {
   color: #ffffff;
   width: 28%;
   margin: 10px auto;
@@ -39,41 +53,45 @@
   letter-spacing: 0.2px;
 }
 
-.rate p:first-child {
+.rate,
+.amount span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.rate p:first-child{
   font-weight: 900;
   font-size: 72px;
   line-height: 78px;
   letter-spacing: 0.2px;
   color: #f3cd03;
-}
-
-.rate,
-.amount span {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .amount span {
   margin: 30px auto;
 }
 
-.rate p:last-child {
+ .rate p:last-child, .rate p:last-child strong {
+  display: block;
   font-weight: 450;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.1px;
+  color: #ffffff;
 }
 
 .amount a {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  width: 35%;
   text-align: center;
-  width: 50%;
   margin: 0 auto;
   background-color: #00b6f0;
-  padding: 16px 46px;
+  padding: 16px 0;
   border-radius: 85px;
   color: white;
   text-decoration: none;
@@ -91,13 +109,24 @@
     width: 40%;
   }
 
+  .flip2{
+    display: block;
+  }
+
+  .flip1{
+    display: none;
+  }
+
   .caption h1, .caption p {
     text-align: left;
     margin-left: 0px;
   }
 
+  
+
+
   .amount{
-    padding-top: 150px;
+    margin-top: 0px;
   }
 
   .amount  p {
@@ -112,9 +141,9 @@
     margin-left: 0px;
   }
 
-  .rate > p:last-child {
+  /* .rate > p:last-child {
     width: 120%;
-  }
+  } */
 
   .amount a, .rate {
     width: 55%;    

@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 import { NavLink } from "react-router-dom";
-import twitter from "../../images/twitter.png";
-import facebook from "../../images/facebook.png";
-import linkedin from "../../images/linkedin.png";
+import twitter from "../../images/twitter.svg";
+import facebook from "../../images/facebook.svg";
+import linkedin from "../../images/linkedin.svg";
 import './Footer.css'
 
 const Footer = () => {
@@ -14,6 +14,7 @@ const Footer = () => {
         <p>Just type what's on your mind </p>
       </div>
       <div>
+        
         <nav className="footerNav">
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/product">Product</NavLink>

@@ -1,114 +1,92 @@
-
+.herosection {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: rgb(247, 247, 247);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 247, 247, 1) 0%,
+    rgba(171, 247, 238, 1) 80%
+  );
+  min-height: 90vh;
+  margin-top: 90px;
+}
 .herofield {
-    width: min(500px, 92%);
-    height: 900px;
-    margin: 0 auto;
-    padding-top: 100px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.22) 7.62%,
-      rgba(0, 225, 198, 0.06) 91.46%
-    );
-  }
-  
-  .cont{
-     text-align: center; 
-  }
-  .herofield h1 {
-    font-size: 56px;
-    margin: 0 auto;
-    font-weight: 700;
-    line-height: 65px;
-    width: 80%;
-    color: #112d57;
-  }
-  
-  .herofield p {
-    margin: 40px auto;
-    color: #5c5c5c;
-    font-size: 24px;
-    line-height: 38px;
-    width: 70%;
-  }
-  .heroImage > img{
+  width: 60%;
+  margin: 0 auto;
+  /* padding-top: 100px; */
+}
+.cont {
+  text-align: center;
+}
+.herofield h1 {
+  font-size: 60px;
+  margin: 20px auto;
+  font-weight: 700;
+  line-height: 65px;
+  width: 80%;
+  color: #112d57;
+}
+.herofield p {
+  margin: 40px auto;
+  color: #5c5c5c;
+  font-size: 24px;
+  line-height: 38px;
+  width: 70%;
+  font-family: "Circular Std", sans-serif;
+}
+.herofield p span {
+  font-family: "Circular Std", sans-serif;
+}
+
+.buttons {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.buttons a:first-child {
+  background-color: #00b6f0;
+  padding: 16px 46px;
+  border-radius: 85px;
+  color: white;
+  text-decoration: none;
+}
+.buttons a:last-child {
+  background-color: #ffffff;
+  padding: 16px 50px;
+  border-radius: 85px;
+  color: #20262a;
+  text-decoration: none;
+}
+.circle {
+  width: 14%;
+  position: absolute;
+  bottom: 0;
+}
+.circle > img {
+  width: 100%;
+}
+.circleOne {
+  left: 0;
+}
+.circleshape {
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .herofield {
     width: 100%;
   }
-  
-  .buttons {
-    margin-top: 50px;
-    margin-bottom: 45px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-  }
-  
-  .buttons a:first-child {
-    background-color: #00b6f0;
-    padding: 16px 46px;
-    border-radius: 85px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .buttons a:last-child {
-    background-color: #ffffff;
-    padding: 16px 46px;
-    border-radius: 85px;
-    color: #20262a;
-    text-decoration: none;
-  }
-  
-  .circleOne {
-    position: absolute;
-    top: 30%;
-    left: 0%;
-    float: left;
-    width: 150px;
-    shape-outside: circle(80% at 30%);
-    clip-path: circle(40% at 0%);
-    height: 500px;
-    background-color: #00b6f0;
-    z-index: -1;
-  }
-  
-  .circleTwo {
-    position: absolute;
-    top: 75%;
-    right: 0%;
-    float: right;
-    width: 200px;
-    height: 350px;
-    margin: 20px;
-    shape-outside: circle(50% at 30%);
-    clip-path: circle(50% at 0%);
-    background: #f3cd03;
-    transform: rotate(180deg);
-    z-index: -1;
-  }
-  
-
-  @media screen and (min-width: 768px) {
-   .herofield{
-    width: 80%;
-   }
-
-   .herofield h1{
+  .herofield h1 {
     width: 50%;
-   }
-    .herofield p {
-    width: 50%;
-   }
-
-   .circleOne{
-    width: 600px;
-    height: 800px;
-   }
-
-   .circleTwo{
-    width: 500px;
-    height: 500px;
-    top: 55%;
-   }
-   
-
   }
+  .herofield p {
+    width: 50%;
+  }
+  .herofield h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}

@@ -16,7 +16,6 @@ const Focus = () => {
           Being a freelancer is a rollercoaster of emotions. We built Slate to
           keep your freelance business building...
         </p>
-
         <a href="/">Get Started</a>
       </div>
     </div>

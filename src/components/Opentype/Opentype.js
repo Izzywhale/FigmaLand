@@ -1,6 +1,7 @@
 import React from "react";
 import "./Opentype.css";
-import mobilecode from "../../images/mobilecode.png";
+import mobilecode from "../../images/mobilecode.svg";
+import yellow from "../../images/yellow.svg";
 
 const Opentype = () => {
   return (
@@ -17,7 +18,10 @@ const Opentype = () => {
 
         <div className="openImage">
           <img src={mobilecode} alt="" />
+          <img src={yellow} alt="" /> 
         </div>
+
+        
 
         <div className="openNote">
           <h3>OpenType features</h3>

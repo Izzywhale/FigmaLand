@@ -3,6 +3,7 @@ import headicon from "../../images/headicon.png";
 import mailicon from "../../images/mailicon.png";
 import lockicon from "../../images/lockicon.png";
 import eyecon from "../../images/eyecon.png";
+import openeyecon from "../../images/openeye.png";
 import { useState } from "react";
 
 const Login = () => {
@@ -18,6 +19,20 @@ const Login = () => {
       [e.target.name]: e.target.value,
     }));
   };
+
+  const [toggle, setToggle] = useState(false);
+
+  //   const navButtonToggle = document.querySelector("[data-nav-btn-toggle]");
+  //   navButtonToggle.addEventListener("click", function() {
+  //     [this,value.password].forEach(_element => _element.classList.toggle("active"));
+  // });
+
+  // const usePasswordToggle = (e) => {
+  //   const {visible,setvisibility} = useState({
+
+  //   })
+
+  // };
 
   return (
     <form className={classes.form}>
@@ -48,13 +63,28 @@ const Login = () => {
         <label>
           <img src={lockicon} alt="/" />
           <input
-            type="text"
+            type={toggle ? "text" : "password"}
             placeholder="Password"
             name="password"
             value={value.password}
             onChange={handleChange}
           />
-          <img src={eyecon} alt="/" />
+
+          {toggle ? (
+            <img
+              class="open"
+              src={openeyecon}
+              alt=""
+              onClick={() => setToggle(false)}
+            />
+          ) : (
+            <img
+              class="close"
+              src={eyecon}
+              alt="/"
+              onClick={() => setToggle(true)}
+            />
+          )}
         </label>
 
         <div className={classes.terms}>
@@ -70,9 +100,6 @@ const Login = () => {
           <p>
             Already registered? <span>Sign in</span>{" "}
           </p>
-          <h2>{value.name}</h2>
-          <h2>{value.email}</h2>
-          <h2>{value.password}</h2>
         </div>
       </div>
     </form>

@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import {  useState } from "react";
 import "./header.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 import vector from "../../images/Vector.png";
 
 

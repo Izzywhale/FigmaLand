@@ -27,10 +27,23 @@
     margin-right:40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 560px) {
+    .footerNav {
+        gap: 15px;}
+     .icons {
+        display: none;
+     }
+    }
+
+
+@media screen and (min-width: 968px) {
     .footer, .footerNav {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .icons {
+        display: inline;
     }
 
     .footer {

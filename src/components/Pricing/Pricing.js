@@ -6,16 +6,22 @@ const Pricing = () => {
     <div className="pricing">
       <div className="caption">
         <h1>Pricing</h1>
-        <p>
+        <p className="flip1">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers who want a simple way
+        </p>
+        <p className="flip2">
           Most calendars are designed for teams. Slate is designed for
           freelancers who want a simple way to plan their schedule.
         </p>
       </div>
       <div className="amount">
-        <p>30-DAY FREE TRIAL</p>
+        <p className="thirty">30-DAY FREE TRIAL</p>
         <div className="rate">
           <p>$5</p>
-          <p>/month per user</p>
+          <p>
+            /month <strong> per user</strong>
+          </p>
         </div>
 
         <span>Most calendars are designed for teams. </span>

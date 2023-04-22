@@ -1,10 +1,15 @@
 @import url("https://fonts.cdnfonts.com/css/circular-std");
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap'); */
+/* @font-face {
+  font-family: myFont;
+  src: url(CircularStdFont.otf);
+}
+                */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Circular Std", sans-serif;
+  font-family:  'Circular Std', sans-serif;
 }
 
 .main {

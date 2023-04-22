@@ -1,7 +1,6 @@
 import React from "react";
-import screen from "../../images/screen.svg";
+import screen from "../../images/screen.png";
 import "./Variable.css";
-import deskVector from "../../images/deskShape.svg";
 
 const Variable = () => {
   return (
@@ -24,11 +23,10 @@ const Variable = () => {
         </div>
         <div className="screenImage">
           <img src={screen} alt="" />
-          <img src={deskVector} alt="" />
         </div>
       </div>
       <div className="shape"></div>
- 
+       <div className="deskShape"></div>
     </div>
   );
 };
